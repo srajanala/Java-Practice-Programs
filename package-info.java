@@ -5,4 +5,4 @@
  * @author sai sindhu R
  *
  */
-package Collection;
+package ComparatorInterface;
