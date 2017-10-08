@@ -1,13 +1,14 @@
-package Assertionspackage;
+package FunctionalInterface;
 
-import java.util.Scanner;
+public class Test {
 
-class Test
-{
-    public static void main( String args[] )
-    {
-        int value = 15;
-        assert value >= 20 : " Underweight";
-        System.out.println("value is "+value);
-    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       new Thread(new Runnable(){
+    	   public void run(){
+    		   System.out.println("new thread created");
+    	   }
+       }).start();
+	}
+
 }
