@@ -1,17 +1,20 @@
-package FunctionalInterface;
-
-interface square{
-	int calculate(int x);
-}
+package LambdaExpressionPackage;
+import java.util.ArrayList;
 
 public class Test2 {
 
 	public static void main(String[] args) {
-		int a=5;
 		// TODO Auto-generated method stub
-       square s=(int x)->x*x;
-       int ans=s.calculate(a);
-       System.out.println(ans);
+        ArrayList<Integer> a = new ArrayList<Integer>();
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
+        a.add(6);
+        
+       a.forEach(n->System.out.println(n));
+       a.forEach(n->{if(n%2==0) System.out.println(n);});
 	}
 
 }
