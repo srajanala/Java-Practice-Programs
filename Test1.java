@@ -1,15 +1,20 @@
-package LambdaExpressionPackage;
-
-interface FunctInterface{
-	void abstractfun(int x);
+package NestedInterface;
+class Test{
+	interface yes{
+		void show();
+	}
 }
 
-public class Test1 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-               FunctInterface f = (int x)->System.out.println(2*x);
-               f.abstractfun(10);
+class Testing implements Test.yes{
+	public void show(){
+		System.out.println("nested interface - interface in a class");
 	}
-
+}
+public class Test1 {
+   public static void main(String[] args){
+	   Test.yes obj;
+	   Testing t = new Testing();
+	   obj=t;
+	   obj.show();
+   }
 }
